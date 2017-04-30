@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   });*/
 
- $.get('http://www.reddit.com/r/tiltshift.json').done(function(response) {
+ $.get('https://www.reddit.com/r/tiltshift.json').done(function(response) {
 
       //console.log(response.data.children);
 
