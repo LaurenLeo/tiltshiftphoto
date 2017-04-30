@@ -1,0 +1,68 @@
+html {
+  background-color: #efffff;
+
+}
+h1 {
+  font-family: 'Baloo', cursive;
+  text-align: center;
+  font-size: 350%;
+}
+
+h4 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+#gallery {
+  margin: auto;
+  max-width: 780px;
+}
+
+.thumbnail {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 5px;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.thumbnail:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #429bed;
+}
+
+.title {
+  color: #efffff;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
